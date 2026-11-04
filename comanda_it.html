@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandă produse IT</title>
+</head>
+<style>
+html{
+    background-color: seashell;
+}
+</style>
+<body>
+    <h1>Comandă produse IT</h1>
+
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Date Personale și de Contact</legend>
+
+            <label for="nume">Nume și prenume:</label><br>
+            <input type="text" id="nume" name="nume" required><br><br>
+
+            <label for="email">Adresa de e-mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="telefon">Număr de telefon:</label><br>
+            <input type="tel" id="telefon" name="telefon"><br><br>
+
+            <label for="adresa">Adresa de livrare:</label><br>
+            <input type="text" id="adresa" name="adresa"><br>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Detalii Comandă</legend>
+
+            <label for="produs">Produsul dorit:</label><br>
+            <select id="produs" name="produs">
+                <option value="Laptop">Laptop</option>
+                <option value="Mouse">Mouse</option>
+                <option value="Tastatură">Tastatură</option>
+                <option value="Monitor">Monitor</option>
+                <option value="Căști">Căști</option>
+            </select><br><br>
+
+            <label for="cantitate">Cantitate:</label><br>
+            <select id="cantitate" name="cantitate">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5+">5+</option>
+            </select><br><br>
+
+            <p>Metoda de livrare:</p>
+            <input type="radio" id="livrare_curier" name="metoda_livrare" value="Curier rapid" checked>
+            <label for="livrare_curier">Curier rapid</label><br>
+            <input type="radio" id="livrare_magazin" name="metoda_livrare" value="Ridicare din magazin">
+            <label for="livrare_magazin">Ridicare din magazin</label><br>
+            <input type="radio" id="livrare_posta" name="metoda_livrare" value="Poștă">
+            <label for="livrare_posta">Poștă</label><br><br>
+
+            <p>Metoda de plată:</p>
+            <input type="radio" id="plata_card" name="metoda_plata" value="Card online" checked>
+            <label for="plata_card">Card online</label><br>
+            <input type="radio" id="plata_ramburs" name="metoda_plata" value="Ramburs la livrare">
+            <label for="plata_ramburs">Ramburs la livrare</label><br>
+            <input type="radio" id="plata_transfer" name="metoda_plata" value="Transfer bancar">
+            <label for="plata_transfer">Transfer bancar</label><br><br>
+
+            <label for="observatii">Observații sau instrucțiuni speciale:</label><br>
+            <textarea id="observatii" name="observatii" rows="4" cols="50"></textarea><br>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Acțiuni formular</legend>
+            <button type="submit">Trimite comanda</button>
+            <button type="button">Anulează</button>
+            <button type="reset">Resetează formularul</button>
+        </fieldset>
+    </form>
+
+    <br>
+    <a href="Forum.html">&larr; Înapoi la Forum</a>
+</body>
+</html>

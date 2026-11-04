@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEITI  Forum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+    <header>
+        <img src="images/ceiti.jpg" alt="CEITI">
+        <nav>
+            <a href="index.html">Acasă</a>
+            <a href="Gallery.html">Galerie</a>
+            <a href="AboutUs.html">Despre Noi</a>
+            <a href="Multimedia.html">Multimedia</a>
+            <a class="active" href="Forum.html">Forum</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="intro">
+            <p>AI, LLM, IoT, Realitatea Mixta</p>
+            <h1>Formular de cunostinte</h1>
+            <p class="summary">Formular la tema:AI, LLM, IoT si Realitatea Mixta</p>
+        </div>
+
+        <div class="content">
+            <article>
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Chestionar</legend>
+
+                        <fieldset>
+                            <legend>Ⅰ. Inteligență Artificială (AI)</legend>
+
+                            <p><strong>1. Ce este AI?</strong></p>
+                            <input type="radio" id="ai1_a" name="q1" value="a" required>
+                            <label for="ai1_a">Inteligenta artificiala ce simuleaza pe cea umana</label><br>
+                            <input type="radio" id="ai1_b" name="q1" value="b">
+                            <label for="ai1_b">O piesa hardware</label><br>
+                            <input type="radio" id="ai1_c" name="q1" value="c">
+                            <label for="ai1_c">Un tip de cablu de retea</label><br><br>
+
+                            <label for="q2"><strong>2. Numiți un asistent AI cunoscut:</strong></label><br>
+                            <input type="text" id="q2" name="q2" placeholder="Ex: ChatGPT" required><br><br>
+
+                            <p><strong>3. Unde se folosește AI?</strong></p>
+                            <input type="checkbox" id="ai3_a" name="q3_med" value="medicina">
+                            <label for="ai3_a">Medicină</label><br>
+                            <input type="checkbox" id="ai3_b" name="q3_auto" value="auto">
+                            <label for="ai3_b">Mașini autonome</label><br>
+                            <input type="checkbox" id="ai3_c" name="q3_jocuri" value="jocuri">
+                            <label for="ai3_c">Jocuri video</label><br>
+                        </fieldset><br>
+
+                        <fieldset>
+                            <legend>Ⅱ. Modele de Limbaj Mari (LLM)</legend>
+
+                            <p><strong>4. Ce rol are un LLM?</strong></p>
+                            <input type="radio" id="llm1_a" name="q4" value="a" required>
+                            <label for="llm1_a">Înțelege și generează text pe hardware-ul tau</label><br>
+                            <input type="radio" id="llm1_b" name="q4" value="b">
+                            <label for="llm1_b">Curăță memoria RAM</label><br>
+                            <input type="radio" id="llm1_c" name="q4" value="c">
+                            <label for="llm1_c">Formatează hard disk-ul</label><br><br>
+
+                            <label for="q5"><strong>5. Alegeți un model LLM:</strong></label><br>
+                            <select id="q5" name="q5">
+                                <option value="gpt">GPT</option>
+                                <option value="gemini">Gemini</option>
+                                <option value="claude">Claude</option>
+                                <option value="llama">LLaMA</option>
+                            </select><br><br>
+
+                            <p><strong>6. Ați folosit vreodată un LLM?</strong></p>
+                            <input type="radio" id="llm3_da" name="q6" value="da" required>
+                            <label for="llm3_da">Da</label><br>
+                            <input type="radio" id="llm3_nu" name="q6" value="nu">
+                            <label for="llm3_nu">Nu</label><br>
+                        </fieldset><br>
+
+                        <fieldset>
+                            <legend>Ⅲ. Internetul Lucrurilor (IoT)</legend>
+
+                            <p><strong>7. Ce este IoT?</strong></p>
+                            <input type="radio" id="iot1_a" name="q7" value="a" required>
+                            <label for="iot1_a">Dispozitive conectate la internet</label><br>
+                            <input type="radio" id="iot1_b" name="q7" value="b">
+                            <label for="iot1_b">Un antivirus</label><br>
+                            <input type="radio" id="iot1_c" name="q7" value="c">
+                            <label for="iot1_c">Un browser web</label><br><br>
+
+                            <p><strong>8. Alegeți dispozitive IoT:</strong></p>
+                            <input type="checkbox" id="iot2_a" name="q8_ceas" value="ceas">
+                            <label for="iot2_a">Ceas inteligent (Smartwatch)</label><br>
+                            <input type="checkbox" id="iot2_b" name="q8_bec" value="bec">
+                            <label for="iot2_b">Bec inteligent</label><br>
+                            <input type="checkbox" id="iot2_c" name="q8_termostat" value="termostat">
+                            <label for="iot2_c">Termostat inteligent</label><br>
+                        </fieldset><br>
+
+                        <fieldset>
+                            <legend>Ⅳ. Realitatea Mixtă (MR) și Computația Spațială</legend>
+
+                            <p><strong>9. Ce combină Realitatea Mixtă (MR)?</strong></p>
+                            <input type="radio" id="mr1_a" name="q9" value="a" required>
+                            <label for="mr1_a">AR și VR în mediul real</label><br>
+                            <input type="radio" id="mr1_b" name="q9" value="b">
+                            <label for="mr1_b">Tastatura și mouse-ul</label><br>
+                            <input type="radio" id="mr1_c" name="q9" value="c">
+                            <label for="mr1_c">Doar difuzoare audio</label><br><br>
+
+                            <label for="q10"><strong>10. Scrieți o utilizare pentru Apple Vision Pro:</strong></label><br>
+                            <textarea id="q10" name="q10" placeholder="Scrieți pe scurt..."></textarea><br>
+                        </fieldset><br>
+
+                        <input type="submit" value="Trimite răspunsurile">
+                        <input type="reset" value="Resetează">
+                    </fieldset>
+                </form>
+
+                <br>
+                <p><a href="comanda_it.html">Comandă Produse IT &rarr;</a></p>
+            </article>
+
+            <figure>
+                <img src="images/ceiti.jpg" alt="Activitate CEITI">
+                <figcaption>Chestionar facut pentru CEITI </figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <a href="Multimedia.html">Înapoi</a>
+        <a href="index.html">Înapoi la început</a>
+        <div>
+        <a href="https://example.com" style="color: white; text-decoration: none;">Document</a> © 2026 de <a href="https://example.com" style="color: white; text-decoration: none; margin: 5px;">Chijov V.</a> este licențiat sub <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" style="color: white; text-decoration: none;">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em; "><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+        </div>
+    </footer>
+</body>
+</html>
